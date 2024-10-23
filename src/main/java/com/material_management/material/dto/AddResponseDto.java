@@ -1,13 +1,15 @@
 package com.material_management.material.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
+@Builder
+@AllArgsConstructor
 @Getter
-@Setter
 @NoArgsConstructor
-public class AddRequestDto {
+public class AddResponseDto {
 
     private String name;
     private String code;
