@@ -19,19 +19,8 @@ public class MaterialService {
 
     Material add(AddRequestDto dto){
         // 검증
-        log.info("AddDto = {}", dto);
-        log.info("모델 메퍼 = {}", modelMapper);
-        Material entity = null;
-
-        try {
-            entity = modelMapper.map(dto,Material.class);  // null 발생.
-        }catch (Exception e){
-            log.error("에러 내용 = {}", e.getMessage());
-        }
-        log.info("entity 가 값이 왜 비냐? = {}", entity);
-
         // 실행
-        return materialRepository.save(entity);
+        return null;
     };
 
     void update(){
