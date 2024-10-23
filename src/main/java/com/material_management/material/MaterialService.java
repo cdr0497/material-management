@@ -14,8 +14,6 @@ import org.springframework.stereotype.Service;
 public class MaterialService {
 
     private final MaterialRepository materialRepository;
-    private final ModelMapper modelMapper;
-    ;
 
     Material add(AddRequestDto dto){
         // 검증
